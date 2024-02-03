@@ -7,9 +7,18 @@ A catkin workspace containing various packages relating to running the ZED camer
 
 Or, to update submodules (if you forgot to clone recursively):
 
-`cd <submodule>`
-`git submodule update --init --recursive`
+```
+cd <submodule>
+git submodule update --init --recursive
+```
 
-## Requires
+Following installation, open the root of the project and enter:
 
-* ZED SDK installed (CUDA required)
+```
+catkin_make # builds all packages, generates build/ and devel/
+source devel/setup.sh # or .bash, .zsh
+```
+
+## Requirements
+
+* ZED SDK installed (CUDA required) *will not build without*
