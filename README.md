@@ -22,3 +22,8 @@ source devel/setup.sh # or .bash, .zsh
 ## Requirements
 
 * ZED SDK installed (CUDA required) *will not build without*
+
+## Running
+
+Run ZED-provided Camera + RViz code:
+`roslaunch zed_display_rviz display_zed.launch`
