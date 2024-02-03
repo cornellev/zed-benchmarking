@@ -26,4 +26,6 @@ source devel/setup.sh # or .bash, .zsh
 ## Running
 
 Run ZED-provided Camera + RViz code:
-`roslaunch zed_display_rviz display_zed.launch`
+```
+roslaunch zed_display_rviz display_zed.launch
+```
