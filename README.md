@@ -27,7 +27,21 @@ source devel/setup.sh # or .bash, .zsh
 
 ## Running
 
+Always run the following from the root directory before continuing
+```
+source devel/setup.sh # or .bash, .zsh
+```
+
 Run ZED-provided Camera + RViz code:
 ```
 roslaunch zed_display_rviz display_zed.launch
+```
+
+Run custom ZED package:
+*(NEEDS LAUNCH FILE)*
+```
+roslaunch zed_wrapper zed.launch # starts running the camera, publishes expected zed topics
+chmod +x src/zed-camera/src/camerae_processor.py
+rosrun zed-camera camera_processor.py
+rviz # can add topics to rviz
 ```
