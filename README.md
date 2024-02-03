@@ -19,6 +19,6 @@ catkin_make # builds all packages, generates build/ and devel/
 source devel/setup.sh # or .bash, .zsh
 ```
 
-## Requires
+## Requirements
 
 * ZED SDK installed (CUDA required) *will not build without*
