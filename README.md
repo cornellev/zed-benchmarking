@@ -3,7 +3,9 @@ A catkin workspace containing various packages relating to running the ZED camer
 
 ## Installing
 
-`git clone --recursive https://github.com/cornellev/zed-benchmarking.git`
+```
+git clone --recursive https://github.com/cornellev/zed-benchmarking.git`
+```
 
 Or, to update submodules (if you forgot to clone recursively):
 
