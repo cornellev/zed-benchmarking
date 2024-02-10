@@ -60,6 +60,7 @@ rosbag record /tf /tf_static /zed/zed_node/pose /zed/zed_node/odom
 To playback:
 ```
 roscore
+rosparam set use_sim_time_true
 rosbag play <bagfile..bag>
 rviz
 ```
