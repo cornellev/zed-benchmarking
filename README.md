@@ -21,6 +21,10 @@ catkin_make # builds all packages, generates build/ and devel/
 source devel/setup.sh # or .bash, .zsh
 ```
 
+## Resources
+
+https://www.stereolabs.com/docs/ros/zed-node
+
 ## Requirements
 
 * ZED SDK installed (CUDA required) *will not build without*
@@ -44,4 +48,18 @@ roslaunch zed_wrapper zed.launch # starts running the camera, publishes expected
 chmod +x src/zed-camera/src/camerae_processor.py
 rosrun zed-camera camera_processor.py
 rviz # can add topics to rviz
+```
+
+## Recording Data
+
+Record pose, odometry, and transformation tree from ZED camera:
+```
+rosbag record /tf /tf_static /zed/zed_node/pose /zed/zed_node/odom
+```
+
+To playback:
+```
+roscore
+rosbag play <bagfile..bag>
+rviz
 ```
