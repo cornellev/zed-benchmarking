@@ -1,6 +1,8 @@
 # zed-benchmarking
 A catkin workspace containing various packages relating to running the ZED camera
 
+### TODO: add rtabmap as a submodule dependency 
+
 ## Installing
 
 ```
@@ -21,9 +23,15 @@ catkin_make # builds all packages, generates build/ and devel/
 source devel/setup.sh # or .bash, .zsh
 ```
 
+For rtabmap, use: `sudo apt install ros-$ROS_DISTRO-rtabmap-ros`
+Then, `export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/ros/noetic/lib/x86_64-linux-gnu`.
+In the future, use https://github.com/introlab/rtabmap_ros#installation to add as a submodule
+
+
 ## Resources
 
 https://www.stereolabs.com/docs/ros/zed-node
+http://wiki.ros.org/rtabmap_ros/Tutorials
 
 ## Requirements
 
