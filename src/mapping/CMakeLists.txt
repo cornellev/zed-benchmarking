@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(zed_rtabmap_example)
+project(mapping)
 
 ## Generate symbols for IDE indexer
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
