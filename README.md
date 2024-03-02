@@ -49,6 +49,8 @@ Read these links:
 
 Need to figure out how rtabmap_slam and rtabmap_odom work together. Figure out what _odom does. Figure out the 'stack' of how one would use the outputs of rtabmap to improve their odometry.
 
+This link (http://wiki.ros.org/rtabmap_ros/Tutorials/SetupOnYourRobot) is also good for seeing the whole stack.
+
 
 ## Requirements
 
