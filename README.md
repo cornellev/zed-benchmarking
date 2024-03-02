@@ -41,8 +41,13 @@ roslaunch mapping zed_rtabmap.launch
 
 Need to change launch files to get it to localize, and not map
 
-Read these thinks:
+Read these links:
+* http://wiki.ros.org/rtabmap_ros (overview of rtabmap packages)
+* http://wiki.ros.org/rtabmap_slam (rtabmap slam package)
+* http://wiki.ros.org/rtabmap_odom (rtabmap odom packages)
+* http://wiki.ros.org/rtabmap_sync (rtabmap sync packages) 
 
+Need to figure out how rtabmap_slam and rtabmap_odom work together. Figure out what _odom does. Figure out the 'stack' of how one would use the outputs of rtabmap to improve their odometry.
 
 
 ## Requirements
