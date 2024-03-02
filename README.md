@@ -27,11 +27,23 @@ For rtabmap, use: `sudo apt install ros-$ROS_DISTRO-rtabmap-ros`
 Then, `export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/ros/noetic/lib/x86_64-linux-gnu`.
 In the future, use https://github.com/introlab/rtabmap_ros#installation to add as a submodule
 
-
 ## Resources
 
 https://www.stereolabs.com/docs/ros/zed-node
 http://wiki.ros.org/rtabmap_ros/Tutorials
+
+## Mapping
+
+```
+roslaunch zed_wrapper zed.launch
+roslaunch mapping zed_rtabmap.launch
+```
+
+Need to change launch files to get it to localize, and not map
+
+Read these thinks:
+
+
 
 ## Requirements
 
