@@ -1,7 +1,10 @@
 # zed-benchmarking
 A catkin workspace containing various packages relating to running the ZED camera
 
-### TODO: add rtabmap as a submodule dependency 
+## ZED Issues
+
+https://community.stereolabs.com/t/camera-hardware-failure-during-streaming-requires-unplug/3590
+https://community.stereolabs.com/t/zed2i-unreliable-connection/3090/10
 
 ## Installing
 
