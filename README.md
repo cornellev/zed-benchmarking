@@ -35,25 +35,21 @@ In the future, use https://github.com/introlab/rtabmap_ros#installation to add a
 https://www.stereolabs.com/docs/ros/zed-node
 http://wiki.ros.org/rtabmap_ros/Tutorials
 
-## Mapping
-
-```
-roslaunch zed_wrapper zed.launch
-roslaunch mapping zed_rtabmap.launch
-```
-
-Need to change launch files to get it to localize, and not map
-
-Read these links:
 * http://wiki.ros.org/rtabmap_ros (overview of rtabmap packages)
 * http://wiki.ros.org/rtabmap_slam (rtabmap slam package)
 * http://wiki.ros.org/rtabmap_odom (rtabmap odom packages)
 * http://wiki.ros.org/rtabmap_sync (rtabmap sync packages) 
 
-Need to figure out how rtabmap_slam and rtabmap_odom work together. Figure out what _odom does. Figure out the 'stack' of how one would use the outputs of rtabmap to improve their odometry.
-
 This link (http://wiki.ros.org/rtabmap_ros/Tutorials/SetupOnYourRobot) is also good for seeing the whole stack.
 
+## Mapping
+
+```
+roslaunch mapping zed_odom_only.launch
+roslaunch mapping sl_rtabmap.launch # localization:= true/false
+```
+
+ZED Odom only publishes the ZED visual odometry data, but not the area-mapping data / their SLAM stuff. This allows rtabmap slam to handle map -> odom tf tree updates. This may not be perfect, but until more tests are done, this setup makes sense to me. 
 
 ## Requirements
 
