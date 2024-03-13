@@ -3,8 +3,9 @@ A catkin workspace containing various packages relating to running the ZED camer
 
 ## ZED Issues
 
-https://community.stereolabs.com/t/camera-hardware-failure-during-streaming-requires-unplug/3590
-https://community.stereolabs.com/t/zed2i-unreliable-connection/3090/10
+* https://community.stereolabs.com/t/camera-hardware-failure-during-streaming-requires-unplug/3590
+* https://community.stereolabs.com/t/zed2i-unreliable-connection/3090/10
+* Update to ZED SDK 4.0.8
 
 ## Installing
 
